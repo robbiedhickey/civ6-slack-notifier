@@ -22,4 +22,4 @@ The easiest way to get started is to click the `Deploy with Vercel` button in th
 
 ## Optional Enhancements
 
-If you want to include @ mentions in your turn notifications, you can also add a `USER_MAP_JSON` environment variable. It expects a parseable JSON string, you can see an example in the provided `.env.sample` file. You can find a user's slack userId with the steps in [this article](https://moshfeu.medium.com/how-to-find-my-member-id-in-slack-workspace-d4bba942e38c)
+If you want to include @ mentions in your turn notifications, you can also add a `USER_MAP_JSON` environment variable. It expects a parseable JSON string, you can see an example in the provided `.env.sample` file. The JSON is just a map of `civ vi user`->`slackUserId`. You can find a user's slackUserId with the steps in [this article](https://moshfeu.medium.com/how-to-find-my-member-id-in-slack-workspace-d4bba942e38c)

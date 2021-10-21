@@ -1,6 +1,6 @@
 # Civilization VI Slack Notifier [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Frobbiedhickey%2Fciv6-slack-notifier&env=SLACK_WEBHOOK_URL&envDescription=You%20can%20generate%20a%20Slack%20webhook%20URL%20by%20following%20the%20steps%20at%20this%20link%3A%20https%3A%2F%2Fapi.slack.com%2Fmessaging%2Fwebhooks%23create_a_webhook&project-name=civ6-slack-notifier&repo-name=civ6-slack-notifier)
 
-This project aims to make deploying your own Civilization VI `Play By Cloud` webhook as easy as possible.
+This project aims to make deploying your own Civilization VI `Play By Cloud` webhook as easy as possible. It currently only supports Slack, Discord may be supported in the future but there is already an [excellent project](https://civ.halfstack.software/) catering to that use case.
 
 ## Setup 
 

@@ -2,7 +2,13 @@
 
 This project is designed to easily deploy your own webhook using vercel to capture and forward notifications to a slack channel. 
 
-## Getting Started
+## Deploy Button Setup
+
+* Fork this repo
+* Click the `Deploy with Vercel` button in the header
+  * You will be asked to provide your `SLACK_WEBHOOK_URL`
+
+## Manual Setup
 
 * Clone/fork this repo
 * [Create a slack webhook](https://api.slack.com/messaging/webhooks#create_a_webhook)

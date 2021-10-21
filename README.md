@@ -2,16 +2,17 @@
 
 This project is designed to easily deploy your own webhook using vercel to capture and forward notifications to a slack channel. 
 
+## Prequisites
+
+[Create a slack webhook](https://api.slack.com/messaging/webhooks#create_a_webhook)
+
 ## Deploy Button Setup
 
-* Fork this repo
-* Click the `Deploy with Vercel` button in the header
-  * You will be asked to provide your `SLACK_WEBHOOK_URL`
+The easiest way to get started is to click the `Deploy with Vercel` button in the header. You will be asked to create a Vercel account, which is free. After going through the wizard, you will be asked to provide the slack webhook url as the `SLACK_WEBHOOK_URL` environment variable. At the end of the deployment, Vercel will provide you with a URL that you can use to configure your Play By Cloud setting in Civ VI. 
 
 ## Manual Setup
 
 * Clone/fork this repo
-* [Create a slack webhook](https://api.slack.com/messaging/webhooks#create_a_webhook)
 * Sign up for an account at [Vercel](https://vercel.com/signup)
 * Install the vercel-cli: `npm install -g vercel`
 * Login to vercel: `vercel login`

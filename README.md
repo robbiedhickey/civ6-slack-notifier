@@ -8,11 +8,11 @@ This project aims to make deploying your own Civilization VI `Play By Cloud` web
 
 [Create a slack webhook](https://api.slack.com/messaging/webhooks#create_a_webhook)
 
-### Deploy Button Setup
+### Deploy Button Setup (Recommended)
 
 The easiest way to get started is to click the `Deploy with Vercel` button in the header. You will be asked to create a Vercel account, which is free. After going through the wizard, you will be asked to provide the slack webhook url as the `SLACK_WEBHOOK_URL` environment variable. Navigate to the deployment once complete - the landing page will present you with the webhook URL you can use to configure the `Play By Cloud Webhook URL` setting in the game options.
 
-### Manual Setup
+### Manual Setup (Advanced)
 
 * Clone/fork this repo
 * Sign up for an account at [Vercel](https://vercel.com/signup)

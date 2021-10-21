@@ -1,4 +1,4 @@
-# Civilation VI Slack Notifier
+# Civilization VI Slack Notifier [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Frobbiedhickey%2Fciv6-slack-notifier&env=SLACK_WEBHOOK_URL&envDescription=You%20can%20generate%20a%20Slack%20webhook%20URL%20by%20following%20the%20steps%20at%20this%20link%3A%20https%3A%2F%2Fapi.slack.com%2Fmessaging%2Fwebhooks%23create_a_webhook&project-name=civ6-slack-notifier&repo-name=civ6-slack-notifier)
 
 This project is designed to easily deploy your own webhook using vercel to capture and forward notifications to a slack channel. 
 

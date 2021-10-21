@@ -10,11 +10,18 @@ if(process.env.USER_MAP_JSON) {
   }) 
 }
 
+const required_params = ["value1", "value2", "value3"]
+const validate = (body) => required_params.every(v => Object.keys(body).includes(v));
+
 module.exports = async (req, res) => {
   try {
-    console.log('Incoming webhook: ', req.body)
 
     const dryRun = Boolean(req.query.dryRun);
+    const body = req.body || {};
+
+    if(!validate(body)) {
+      return res.status(200).send(`Expected a POST request with the following body: { "value1": "gameName", "value2": "playerName", "value3": "turnNumber" }`)
+    }
 
     const slackWebhookUrl = process.env.SLACK_WEBHOOK_URL;
 
@@ -23,9 +30,9 @@ module.exports = async (req, res) => {
       value1: gameName,
       value2: playerName,
       value3: turnNumber,
-    } = req.body;
+    } = body;
 
-    let slackUserId = USER_MAP[playerName.toLowerCase()]
+    const slackUserId = USER_MAP[playerName.toLowerCase()]
 
     if(slackUserId) {
       playerName = `<@${slackUserId}>`;

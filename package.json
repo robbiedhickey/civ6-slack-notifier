@@ -11,6 +11,7 @@
   "author": "Robbie Hickey <robbie.d.hickey@gmail.com> (https://github.com/robbiedhickey)",
   "license": "MIT",
   "dependencies": {
+    "@logtail/js": "^0.1.7",
     "node-fetch": "2.6.5"
   },
   "devDependencies": {
